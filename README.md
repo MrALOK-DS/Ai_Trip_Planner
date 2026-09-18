@@ -28,24 +28,3 @@
 
 ---
 
-## 🔑 API Keys & Environment Configuration
-
-> ⚠️ **Important Security Note:** Security guidelines ke mutabiq actual API keys repository me commit nahi ki gayi hain. Project ko local system par run karne ke liye apni khud ki API keys configure karein.
-
-### Required API Services
-1. **Google Maps API Key:** (Places API, Geocoding API, Directions API, Distance Matrix API enable karein).
-2. **AI Provider API Key:** (Gemini API Key ya OpenAI API Key).
-
-### Setup Instructions
-Project root directory me `src/main/resources/application.properties` (ya `.env` file) me Apni API keys configure karein:
-
-```properties
-# Server Configuration
-server.port=8080
-
-# Google Maps API Configuration
-google.maps.api.key=YOUR_GOOGLE_MAPS_API_KEY_HERE
-
-# AI Service Configuration
-ai.provider.api.key=YOUR_GEMINI_OR_OPENAI_API_KEY_HERE
-ai.provider.model=gemini-pro
